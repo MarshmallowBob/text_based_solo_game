@@ -1,0 +1,16 @@
+c:\users\bbruffey\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+c:\users\bbruffey\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+c:\users\bbruffey\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+c:\users\bbruffey\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+c:\users\bbruffey\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+c:\users\bbruffey\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\obj\Debug\Bruffey's Adventure.csprojResolveAssemblyReference.cache
+C:\Users\bbruffey\Documents\Visual Studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bbruffey\Documents\Visual Studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bbruffey\Documents\Visual Studio 2017\Projects\Surprise\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\bbruffey\Documents\Visual Studio 2017\Projects\Surprise\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\bbruffey\Documents\Visual Studio 2017\Projects\Surprise\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\bbruffey\Documents\Visual Studio 2017\Projects\Surprise\ConsoleApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bbruffey\Documents\Visual Studio 2017\Projects\Surprise\ConsoleApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bbruffey\Documents\Visual Studio 2017\Projects\Surprise\ConsoleApp1\obj\Debug\Bruffey's Adventure.csprojResolveAssemblyReference.cache
+C:\Users\bbruffey\Documents\Visual Studio 2017\Projects\Surprise\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\bbruffey\Documents\Visual Studio 2017\Projects\Surprise\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
