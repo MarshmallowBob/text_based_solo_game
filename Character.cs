@@ -58,7 +58,25 @@ namespace BruffGame
                 if(room.ID==rID)
                 {
                     CurrentRoom = room;
-                    Game.Message(CurrentRoom.Intro);
+                    var exits = "Exits are: ";
+                    if(CurrentRoom.North >= 0)
+                    {
+                        exits += "n,";
+                    }
+                    if (CurrentRoom.South >= 0)
+                    {
+                        exits += "s,";
+                    }
+                    if (CurrentRoom.East >= 0)
+                    {
+                        exits += "e,";
+                    }
+                    if (CurrentRoom.West >= 0)
+                    {
+                        exits += "w,";
+                    }
+                    exits = exits.Substring(0, exits.Length - 1);
+                    Game.Message(CurrentRoom.Intro+"\n\n"+exits+"\n\n");
                     foreach (var enemy in CurrentRoom.KillableList)
                     {
                         Game.Message(enemy.Intro + "\n");

@@ -230,6 +230,7 @@ namespace BruffGame
                         if (!foundSpell)
                         {
                             Message("You don't have that spell available to cast.");
+                            return;
                         }
                         break;
                     }
@@ -385,39 +386,51 @@ namespace BruffGame
                             switch (whatWeWearing)
                             {
                                 case "grass":
+                                    c.Inventory.Add(c.EquippedArmor.Name);
                                     c.EquippedArmor = new Armor() { Name = "Grass Armor", DamageMultiplier = 1.4 };
                                     break;
                                 case "wooden":
+                                    c.Inventory.Add(c.EquippedArmor.Name);
                                     c.EquippedArmor = new Armor() { Name = "Wooden Armor", DamageMultiplier = 1.3 };
                                     break;
                                 case "bronze":
+                                    c.Inventory.Add(c.EquippedArmor.Name);
                                     c.EquippedArmor = new Armor() { Name = "Bronze Armor", DamageMultiplier = 1.2 };
                                     break;
                                 case "iron":
+                                    c.Inventory.Add(c.EquippedArmor.Name);
                                     c.EquippedArmor = new Armor() { Name = "Golden Armor", DamageMultiplier = 0.9 };
                                     break;
                                 case "platinum":
+                                    c.Inventory.Add(c.EquippedArmor.Name);
                                     c.EquippedArmor = new Armor() { Name = "Platinum Armor", DamageMultiplier = 0.8 };
                                     break;
                                 case "diamond":
+                                    c.Inventory.Add(c.EquippedArmor.Name);
                                     c.EquippedArmor = new Armor() { Name = "Diamond Armor", DamageMultiplier = 0.4 };
                                     break;
                                 case "stick":
+                                    c.Inventory.Add(c.EquippedWeapon.Name);
                                     c.EquippedWeapon = new Weapon() { Name = "Broken, Old Stick", DamageMultiplier = 0.6, HitVerb="poke"};
                                     break;
                                 case "brick":
+                                    c.Inventory.Add(c.EquippedWeapon.Name);
                                     c.EquippedWeapon = new Weapon() { Name = "Crumbling Brick", DamageMultiplier = 0.7, HitVerb="bash" };
                                     break;
                                 case "spear":
+                                    c.Inventory.Add(c.EquippedWeapon.Name);
                                     c.EquippedWeapon = new Weapon() { Name = "Spear of Azeroth", DamageMultiplier = 1.1, HitVerb="gouge"};
                                     break;
                                 case "scythe":
+                                    c.Inventory.Add(c.EquippedWeapon.Name);
                                     c.EquippedWeapon = new Weapon() { Name = "Gnarly, Serrated Scythe", DamageMultiplier = 1.2, HitVerb="slash"};
                                     break;
                                 case "dirk":
+                                    c.Inventory.Add(c.EquippedWeapon.Name);
                                     c.EquippedWeapon = new Weapon() { Name = "Poison-Tipped Dirk", DamageMultiplier = 1.4, HitVerb = "stab"};
                                     break;
                                 case "falchion":
+                                    c.Inventory.Add(c.EquippedWeapon.Name);
                                     c.EquippedWeapon = new Weapon() { Name = "Falchion Made from the Finest Steel", DamageMultiplier = 2.0, HitVerb="bifurcate"};
                                     break;
                                 default:
@@ -499,12 +512,9 @@ namespace BruffGame
                     }
                     break;
                 case "e":
-                    if (c.CurrentRoom.ID==0)
+                    if (c.CurrentRoom.ID==0 && c.Level<5)
                     {
-                        if(c.Level<5)
-                        {
-                            Message("The priest stops you from going to the East. \"I implore you, do not travel East in your current condition. Head NORTH first to hone your skills.\"");
-                        }
+                        Message("The priest stops you from going to the East. \"I implore you, do not travel East in your current condition. Head NORTH first to hone your skills.\"");
                     }
                     else if (c.CurrentRoom.East != -1)
                     {
@@ -705,7 +715,7 @@ namespace BruffGame
         {
             Message("Choose a name: ");
             c.Name = Console.ReadLine();
-            Message(String.Format("Welcome to the temple, {0}. You must complete all 8 trials to obtain fragments that restore the key that unlocks the Righteous Chest.\n", c.Name));
+            Message(String.Format("Welcome to the temple, {0}. You must complete all 6 trials to obtain fragments that restore the key that unlocks the Righteous Chest.\n", c.Name));
             Message("Next to your command input, you'll see (H: XXX, M: XXX) which indicates your current health and mana.\n");
             Message("If your health reaches 0, you will die. If your mana reaches 0, you'll be temporarily unable to cast spells.\n");
             Message("If you need assistance at any time, just type \"help\".\n");
@@ -718,10 +728,30 @@ namespace BruffGame
             {
                 if(s!=null)
                 {
-                        c.Mana -= s.Cost;
-                        var spellDamage = rand.Next(s.MinDamage, s.MaxDamage);
-                        n.Health -= spellDamage;
-                        Message("\nYou blast the " + n.Name + " with a magic " + s.Name + ", ouch! It deals " + spellDamage + " damage! He now has " + n.Health + " health.");
+                    c.Mana -= s.Cost;
+                    var spellDamage = rand.Next(s.MinDamage, s.MaxDamage);
+                    if(s.CritChance>0)
+                    {
+                        var crit = false;
+                        var rando = new Random();
+                        switch (s.CritChance)
+                        {
+                            case .01:
+                                crit = (rando.Next(0, 100) == 74);
+                                break;
+                            case .1:
+                                crit = (rando.Next(0, 10) == 7);
+                                break;
+                        }
+                        if (crit)
+                        {
+                            spellDamage += s.CritDamage;
+                            Message("The magic EXPLODES from your hands as if you were a master mage, causing a critical hit!");
+                        }
+
+                    }
+                    n.Health -= spellDamage;
+                    Message("\nYou blast the " + n.Name + " with a magic " + s.Name + ", ouch! It deals " + spellDamage + " damage! He now has " + n.Health + " health.");
                 }
                 var charHit = (int)Math.Ceiling(((rand.Next(1, 11)+c.Attack) * c.EquippedWeapon.DamageMultiplier)*n.EquippedArmor.DamageMultiplier);
                 var npcHit = (int)Math.Ceiling(((rand.Next(n.MinDamage, n.Strength)-(c.Defense*.1))* n.EquippedWeapon.DamageMultiplier)*c.EquippedArmor.DamageMultiplier);
@@ -834,6 +864,10 @@ namespace BruffGame
                 case 10:
                     Message("You've learned a new spell, LAVABEAM! Blast holes in your enemies privates for the low cost of 15 mana, dealing 5-11 damage.");
                     c.Spells.Add(new Spell { Cost = 15, Name = "LavaBeam", Desc = "A beam of pure lava blasts holes through unprotected flesh. 5-11 damage.",MinDamage=5,MaxDamage=11,SelfCast=false});
+                    break;
+                case 13:
+                    Message("You unlocked a new spell called DEATH PULSE! It deals 2-3 damage for 20 mana cost, but with a 1% chance to do 1,000 damage each time you cast!");
+                    c.Spells.Add(new Spell { Cost = 20, Name = "DeathPulse", MinDamage = 5, MaxDamage = 11, SelfCast = false });
                     break;
             }
             Message("");

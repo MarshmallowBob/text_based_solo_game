@@ -10,9 +10,15 @@ namespace BruffGame
     {
         public int MinDamage { get; set; }
         public int MaxDamage { get; set; }
+        public int CritDamage { get; set; }
+        public double CritChance { get; set; }
         public bool SelfCast { get; set; }
         public string Name { get; set; }
         public int Cost { get; set; }
         public string Desc { get; set; }
+        public Spell()
+        {
+            SelfCast = false;
+        }
     }
 }
