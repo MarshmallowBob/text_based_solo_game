@@ -1,0 +1,1990 @@
+{  
+   "rooms":[  
+      {  
+         "ID":0,
+         "Intro":"You are in a temple in the center of the city. In front of you lies an altar with a plaque that you're able to READ. Atop the altar lies The Righteous Chest, of which many adventurers such as yourself have attempted to open. Carved from the scales of the once-feared Black Dragon, its magic is impenetrable to all but the Shattered Key. An octagonal hole in the center of the chest glows a dim blue, waiting for the key's return. The floor below the altar is made of a beautiful white marble, freshly polished, which leads to tall, golden pillars on each corner. The pillars hold up a stained glass canopy, casting colors across the altar in front of you. In each direction, two marble steps inlaid with gold symbols lead down to the pavement. ",
+         "North":1,
+         "East":2,
+         "South":3,
+         "West":4,
+         "ReadableList":{  
+            "plaque":"The plaque shines in the colored light that passes through the roof. It reads,\n\n\"WITHIN THIS CHEST\nLIES THAT WHICH YOU NEED\nSEALED AWAY FOR THE CHOSEN ONE\nBLIND TO CORRUPTION AND GREED\"\n\n in deeply-carved, bold letters."
+         },
+         "TalkableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.1,
+                  "Name":"Red Banner Priesthood Cloak"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":100,
+                  "Name":"Justicar's Sword of 1000 Suns"
+               },
+               "Health":10000,
+               "Name":"priest",
+               "Intro":"A weary priest in stained robes stands guard next to the chest, clearly annoyed with passers-by.",
+               "ChatReferences":{  
+                  "1: What's in the chest?":"The priest scoffs at you and gestures at the plaque, saying nothing.",
+                  "2: Where am I?":"The priest clears his throat and utters a single word in a hushed voice: \"Ruins.\"",
+                  "3: What happened to this city?":"\"Thousands of years ago, a black dragon destroyed everything but this holy temple. He was slain atop the roof of this temple, his scales made into the chest before you. Since then, the secrets of the Old Order have been locked within to prevent The Summoning."
+               }
+            }
+         ]
+      },
+      {  
+         "ID":1,
+         "Intro":"You are on the northern steps of the temple. Below your feet, the symbols become clear up close -- the stairs bear the sigils of the five magicks of this realm: water, fire, wind, clay, and steel. A BANNER is strung up across the temple entrance. To the NORTH of the temple lies the city slums, and the temple is to the SOUTH.",
+         "North":5,
+         "South":0,
+         "ReadableList":{  
+            "banner":"The banner is hanging by just 3 of the 4 threads and is heavily tattered. It reads, \"COME ONE, COME ALL, PASS THE TRIALS OF THE SHATTERED KEY TO UNLOCK THE SACRED CHEST\".\n\nYou laugh to yourself at the irony of thousands of dead who've tried."
+         },
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":10,
+                  "Name":"Scraggly Fur"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.1,
+                  "Name":"Filthy, broken claws",
+                  "HitVerb":"scratch"
+               },
+               "Health":10,
+               "Name":"Rat",
+               "MinDamage":1,
+               "Strength":2,
+               "ExpReward":10,
+               "Intro":"At the base of the steps, a starving RAT limps towards you."
+            }
+         ]
+      },
+      {  
+         "ID":5,
+         "Intro":"You set foot into the entrance of the CITY SLUMS. Trash litters the street all around you. On the top of one of the piles, a TATTERED FLYER lies crumpled, and you can hear the sounds of men fighting in the distance. The pavement is cracked beneath your feet and a stench of death wafts towards you in the breeze.\n\nYou are at the intersection of MAIN STREET and 3RD AVENUE.",
+         "North":10,
+         "East":6,
+         "West":12,
+         "South":1,
+         "ReadableList":{  
+            "flyer":"Parts of the flyer are illegible from what seems to be years of abuse. It reads,\n\nWELCOME TO THE TEMPLE OF CINDERS, WARRIOR\nYOUR FATE WILL BE DECIDED BY YOUR BLADE\nJOIN THE CRUSADE FOR THE CHEST\nJULY 8, 2378\n\nCurious, as the current year is 2780. How could this flyer have survived so long?"
+         },
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Wretched, Rotting Flesh"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.1,
+                  "Name":"Sticky maw",
+                  "HitVerb":"bite"
+               },
+               "Health":15,
+               "Name":"Worm",
+               "MinDamage":1,
+               "Strength":2,
+               "ExpReward":10,
+               "Intro":"A demonic garbage WORM slithers your way!"
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Scraggly Fur"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.1,
+                  "Name":"Filthy, broken claws",
+                  "HitVerb":"scratch"
+               },
+               "Health":10,
+               "MinDamage":1,
+               "Strength":2,
+               "Name":"Rat",
+               "ExpReward":10,
+               "Intro":"In the pile of trash, a starving RAT limps towards you."
+            }
+         ]
+      },
+      {  
+         "ID":6,
+         "Intro":"You are in the CITY SLUMS, at the intersection of MAIN STREET and 4TH AVENUE. Blood stains the pavement beneath your feet, blood left long ago that has turned brown in the sun. Each step you take, the blood trail grows wider and darker, sticking to the bottom of your shoes.",
+         "North":9,
+         "East":7,
+         "West":5,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.9,
+                  "Name":"Leather Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1,
+                  "Name":"Brass Knuckles",
+                  "HitVerb":"hard punch"
+               },
+               "Health":30,
+               "MinDamage":2,
+               "Strength":15,
+               "Name":"thug",
+               "ExpReward":50,
+               "Intro":"A greasy THUG leans against a nearby rundown building."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Scraggly Fur"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Diseased claws",
+                  "HitVerb":"scratch"
+               },
+               "Health":20,
+               "Strength":3,
+               "Name":"Rat",
+               "ExpReward":10,
+               "Intro":"A BLOOD RAT crawls from the pools of blood below."
+            }
+         ]
+      },
+      {  
+         "ID":7,
+         "Intro":"You've reached the DESTROYED MONUMENT in the southeast corner of the CITY SLUMS, at the intersection of MAIN STREET and 5TH AVENUE. The once-proud monument is now an indistinguishable pile of metal scrap. At the base, a MESSAGE is carved into the stone placement. The trail of blood continues to widen until the monument, where it curiously ends without explanation.",
+         "North":8,
+         "West":6,
+         "ReadableList":{  
+            "message":"The carving is crude and unfinished, only saying \"FLORG WUZ HE\". You assume it means \"FLORG WUZ HERE\", but who knows who that is."
+         },
+         "GettableList":{  
+            "stick":"An old, broken STICK, perhaps once part of a real weapon, lays at the end of the pool of blood."
+         },
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.9,
+                  "Name":"Leather Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1,
+                  "Name":"Rusty Knife",
+                  "HitVerb":"slash"
+               },
+               "Health":20,
+               "MinDamage":5,
+               "Strength":30,
+               "Name":"thug",
+               "ExpReward":150,
+               "Intro":"A SCARRED, BLOODIED THUG kneels next to the monument, hovering over a corpse. He has a demonic look about him, but appears to have barely won the fight."
+            }
+         ]
+      },
+      {  
+         "ID":8,
+         "Intro":"You walk along the Eastern Wall of the CITY SLUMS, pausing at the intersection of CINDER STREET and 5TH AVENUE. More blood trails here lead SOUTH towards the DESTROYED MONUMENT, leaving an acrid steam rising from the pavement. A BLOODIED NOTE is stuck to the side of the cracked wall, among hundreds of unrecognizable tattered posters.",
+         "North":19,
+         "South":7,
+         "West":9,
+         "ReadableList":{  
+            "note":"Hundreds of years pass, and not one key fragment has been discovered. I'm starting to think the whole thing was a hoax to kill the best Bounty Hunters. Either way, ESMERELDA is going to hear a few words from me. Starting to think the key fragments don't even exi...\n\nBlood blotches out the rest of the note, making it illegible."
+         }
+      },
+      {  
+         "ID":9,
+         "Intro":"The cracked pavement beneath your feet is filled with dried blood. You are stopped at the intersection of CINDER STREET and FOURTH AVENUE. As the sun shines through the yellow haze above, you realize you've gone quite far into the slums now. You can only see a few feet in front of you through the smoke.\n",
+         "North":18,
+         "South":6,
+         "West":10,
+         "East":8,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.8,
+                  "Name":"Studded Leather Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Bloody Knife",
+                  "HitVerb":"slash"
+               },
+               "Health":50,
+               "MinDamage":4,
+               "Strength":20,
+               "Name":"bodyguard",
+               "ExpReward":100,
+               "Intro":"A RUGGED BODYGUARD stands alone in the smoke, staring down at his bloodied blade. Steam rises from the blade, indicating a fresh kill."
+            }
+         ],
+         "TalkableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.8,
+                  "Name":"Studded Leather Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Bloody Knife",
+                  "HitVerb":"slash"
+               },
+               "Health":50,
+               "MinDamage":4,
+               "Strength":20,
+               "Name":"bodyguard",
+               "ExpReward":100,
+               "Intro":"The RUGGED BODYGUARD looks up at you stoically.",
+               "ChatReferences":{  
+                  "1: Who are you?":"My name isn't important. I have failed.",
+                  "2: What are you doing?":"I was tasked with bringing my client to ESMERELDA, the THUG QUEEN. I just got done fighting one on the EAST WALL, but my client didn't make it. Now I don't know what to do.",
+                  "3: What happened to this city?":"This hasn't been a city for hundreds of years. The only safe place is the temple, and that's only because of the Priests Guard. The CITY SLUMS are no place for you; get out."
+               }
+            }
+         ]
+      },
+      {  
+         "ID":10,
+         "Intro":"You are at the intersection of CINDER STREET and THIRD AVENUE. There's more garbage piled here than you've seen anywhere in the CITY SLUMS, most likely from the central location.\n",
+         "North":17,
+         "South":5,
+         "East":9,
+         "West":11,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.8,
+                  "Name":"Sticky Rat Pelt"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.5,
+                  "Name":"Thousands of Infected Claws",
+                  "HitVerb":"slash"
+               },
+               "Health":100,
+               "MinDamage":5,
+               "Strength":15,
+               "Name":"king",
+               "ExpReward":333,
+               "Intro":"In the filth and stench, a horrible RAT KING starts pulling your way. Hundreds of rats, all tangled by the tail, screech in agony with every step."
+            }
+         ]
+      },
+      {  
+         "ID":11,
+         "Intro":"You step into the crossing of CINDER STREET and SECOND AVENUE. Plumes of smoke rise up from the NORTHWEST, which seems to be the cause of the yellow haze darkening the slums. ",
+         "North":16,
+         "South":12,
+         "East":10,
+         "West":14,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Scraggly fur"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Broken Claws",
+                  "HitVerb":"claw"
+               },
+               "Health":10,
+               "MinDamage":0,
+               "Strength":2,
+               "Name":"rat",
+               "ExpReward":10,
+               "Intro":"An INJURED RAT limps away from you, trying to flee."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Thick Plates"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Poisonous Maw",
+                  "HitVerb":"vile bite"
+               },
+               "Health":30,
+               "MinDamage":2,
+               "Strength":10,
+               "Name":"worm",
+               "ExpReward":40,
+               "Intro":"An MAW WORM is hanging from an awning above."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.7,
+                  "Name":"Thick Skin"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.2,
+                  "Name":"Cloven Hooves",
+                  "HitVerb":"stomp"
+               },
+               "Health":55,
+               "MinDamage":3,
+               "Strength":15,
+               "Name":"antelope",
+               "ExpReward":250,
+               "Intro":"A RABID ANTELOPE is stumbling around in the street, kicking at the smaller creatures.",
+               "Treasure":"health,health"
+            }
+         ],
+         "TalkableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":1,
+                  "Name":"Blood-soaked robes"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Cracked staff",
+                  "HitVerb":"slash"
+               },
+               "Health":50,
+               "MinDamage":4,
+               "Strength":20,
+               "Name":"monk",
+               "ExpReward":100,
+               "Intro":"A MONK wearing blood-soaked robes is leaning against a pile of skulls, looking your way inquisitively.",
+               "ChatReferences":{  
+                  "1: Are you injured?":"No. I have slain many enemies in the slums today, but I'll never be able to beat ESMERELDA. She holds one of the key fragments, but is surrounded by BURLY GUARDS, and is quite tough herself. I'm heading back to the TEMPLE to heal.",
+                  "2: What say you about ESMERELDA?":"She is a fierce fighter with a fiercer guard. She is the only BOUNTY HUNTER to return to the city with a KEY FRAGMENT, and has been under constant attack since. I managed to kill her weakest guard, but not without paying a dire price. I need to return to the TEMPLE.",
+                  "3: Can you heal at the TEMPLE?":"No. I will be heading there to prey, then die. If I make it even one more step.",
+                  "4: What's with the ANTELOPE?":"Just one of the many weapons ESMERELDA employs. It followed me here before I hit him with a poison dart, so he should be weakened. She's in the NORTHWEST of the slums, so be careful if you keep heading that way."
+               }
+            }
+         ]
+      },
+      {  
+         "ID":12,
+         "Intro":"You step into the crossing of MAIN STREET and SECOND AVENUE. The stench grows worse as you walk deeper into the slums.",
+         "North":11,
+         "East":5,
+         "West":13,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Scraggly fur"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Broken Claws",
+                  "HitVerb":"claw"
+               },
+               "Health":0,
+               "MinDamage":0,
+               "Strength":2,
+               "Name":"rat",
+               "ExpReward":10,
+               "Intro":"A DYING RAT lies on the pavement, struggling to breathe."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Cracked MedVisor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Jagged, metal first aid kit",
+                  "HitVerb":"toxic bash"
+               },
+               "Health":40,
+               "MinDamage":2,
+               "Strength":15,
+               "Name":"medic",
+               "ExpReward":47,
+               "Intro":"A DERANGED MEDIC is yammering to himself about how he could have done more, several dirty needles sticking out of his broken FIRST AID KIT."
+            }
+         ]
+      },
+      {  
+         "ID":13,
+         "Intro":"You step into the crossing of MAIN STREET and FIRST AVENUE. Just north of here, you can see plumes of yellow smoke spitting out into the slums.",
+         "North":14,
+         "East":12,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Scraggly fur"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Broken Claws",
+                  "HitVerb":"claw"
+               },
+               "Health":17,
+               "MinDamage":0,
+               "Strength":2,
+               "Name":"rat",
+               "ExpReward":10,
+               "Intro":"A PLAGUE RAT is foaming at the mouth in the sewer grate."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Tattered Eyepatch"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.7,
+                  "Name":"Smoked salmon",
+                  "HitVerb":"fish slap"
+               },
+               "Health":50,
+               "MinDamage":5,
+               "Strength":20,
+               "Name":"madman",
+               "ExpReward":66,
+               "Intro":"The TOWN MADMAN is running around in circles here, screaming loudly."
+            }
+         ]
+      },
+      {  
+         "ID":14,
+         "Intro":"The stench grows stronger, and the yellow smoke is all around you now. It smells of acrid, stale chemicals. You're at the cross street of CINDER STREET and FIRST AVENUE. ",
+         "North":15,
+         "South":13,
+         "East":11,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Duct tape armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Broken club",
+                  "HitVerb":"wallop"
+               },
+               "Health":17,
+               "MinDamage":0,
+               "Strength":2,
+               "Name":"thug",
+               "ExpReward":10,
+               "Intro":"A SCRAWNY THUG laughs as you approach the intersection."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":1.5,
+                  "Name":"Headband"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.7,
+                  "Name":"Bent spatula",
+                  "HitVerb":"slap"
+               },
+               "Health":50,
+               "MinDamage":5,
+               "Strength":20,
+               "Name":"madman",
+               "ExpReward":70,
+               "Intro":"A DERANGED MADMAN screams random violent phrases about your mother."
+            }
+         ]
+      },
+      {  
+         "ID":15,
+         "Intro":"You've reached ESMERELDA's HEADQUARTERS, in the northwest of the CITY SLUMS. Heads on spikes surround the entrance to her shanty town. A HASTILY-DRAWN POSTER is shoved in the mouth of one of the skulls. ",
+         "South":14,
+         "East":11,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Duct tape armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Broken club",
+                  "HitVerb":"wallop"
+               },
+               "Health":17,
+               "MinDamage":0,
+               "Strength":2,
+               "Name":"thug",
+               "ExpReward":10,
+               "Intro":"A SCRAWNY THUG laughs as you approach the intersection."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":1.5,
+                  "Name":"Headband"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.7,
+                  "Name":"Bent spatula",
+                  "HitVerb":"slap"
+               },
+               "Health":50,
+               "MinDamage":5,
+               "Strength":20,
+               "Name":"madman",
+               "ExpReward":175,
+               "Intro":"A DERANGED MADMAN screams random violent phrases about your mother."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.4,
+                  "Name":"Double Thick Studded Leather Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"rusty pipe",
+                  "HitVerb":"hit that breaks off part of his pipe, deflecting the blow"
+               },
+               "Health":50,
+               "MinDamage":5,
+               "Strength":40,
+               "Name":"tony",
+               "ExpReward":270,
+               "Intro":"TONY, Esmerelda's top henchman, stands tall beside her wielding a rusty galvanized pipe.",
+               "DeathMessage":"ESMERELDA laughs as TONY falls to the ground dead. \"I always knew he was useless,\" she utters."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.4,
+                  "Name":"Double Thick Studded Leather Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.5,
+                  "Name":"Brick",
+                  "HitVerb":"bash"
+               },
+               "Health":50,
+               "MinDamage":2,
+               "Strength":20,
+               "Name":"esmerelda",
+               "ExpReward":500,
+               "Intro":"ESMERELDA sits atop a throne of starving slaves.",
+               "DeathMessage":"ESMERELDA falls to her knees and coughs up blood, battered and gashed. As she bleeds out, she furiously stares at you and whispers,\"Gah...how...my fragment...the chest..\" Her eyes slowly close and she topples backwards like a rag doll. The slaves immediately flee into the slums.",
+               "Treasure":"health potion,health potion,brick,mana potion,wooden,triangular key fragment"
+            }
+         ],
+         "GettableList":{  
+            "health":"Discarded next to the entrance lies a man's corpse with a full HEALTH POTION strapped to his belt.",
+            "grass":"The man also is wearing unscathed GRASS ARMOR that you could use. A dagger is stuck between his eyes so deep his head is stuck to the ground."
+         }
+      },
+      {  
+         "ID":16,
+         "Intro":"You're at the intersection of CINDER STREET and THIRD AVENUE. To the west, plumes of yellow smoke rise up into the skies. You can hear suffering coming from that direction.",
+         "West":15,
+         "East":17,
+         "South":11,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":3,
+                  "Name":"Birthday suit"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":10,
+                  "Name":"Infected Mace",
+                  "HitVerb":"smash"
+               },
+               "Health":25,
+               "MinDamage":2,
+               "Strength":5,
+               "Name":"knight",
+               "ExpReward":58,
+               "Intro":"A RABID KNIGHT is rolling around on his back, foaming at the mouth and screaming."
+            }
+         ]
+      },
+      {  
+         "ID":17,
+         "Intro":"You are at the NORTH CENTER of the slums. In the middle of the square is a pile of skulls, covering what appears to be a large STONE PLATE with an inscription.",
+         "West":16,
+         "East":18,
+         "South":10,
+         "ReadableList":{  
+            "plate":"You knock skulls to the side to read the STONE PLATE. Inscribed on the bottom is a short phrase:\"NEVER FIGHT ESMERELDA\"."
+         }
+      },
+      {  
+         "ID":18,
+         "Intro":"You enter the cleanest intersection of the slums you've seen. It's pristine top to bottom, even the dust from the knick knacks in the building windows removed down to the speck. In the middle of the square is a square, wooden table with carved legs in the shape of a Chinese dragon. In the center of the table, a POST-IT NOTE is stuck to a lone cup.",
+         "West":17,
+         "East":19,
+         "South":9,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":3,
+                  "Name":"Obliterated plate armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":2,
+                  "Name":"shattered sword",
+                  "HitVerb":"lacerating stab"
+               },
+               "Health":80,
+               "MinDamage":1,
+               "Strength":40,
+               "Name":"gronk",
+               "ExpReward":777,
+               "Intro":"GRONK THE BARBARIAN sits at one of the four chairs of the table, muttering about blood and suffering.",
+               "Treasure":"health,health"
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.1,
+                  "Name":"Diamond Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.4,
+                  "Name":"Rusty chain",
+                  "HitVerb":"smash"
+               },
+               "Health":40,
+               "MinDamage":15,
+               "Strength":20,
+               "Name":"guard",
+               "ExpReward":99,
+               "Intro":"A former ROYAL GUARD is sobbing softly to himself, holding a broken, rusted chain in his hands."
+            }
+         ],
+         "TalkableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.1,
+                  "Name":"Diamond Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.4,
+                  "Name":"Rusty chain",
+                  "HitVerb":"smash"
+               },
+               "Health":40,
+               "MinDamage":15,
+               "Strength":20,
+               "Name":"guard",
+               "ExpReward":99,
+               "Intro":"The ROYAL GUARD nods at you as you approach.",
+               "ChatReferences":{  
+                  "1: Who are you?":"I once guarded the noble family of this city. But they were all slaughtered seven months ago in THE CULLING. Since then, this part of the city has gone to total shit.",
+                  "2: What happened to your weapon?":"Stolen from me as I lay sleeping. It was a fine SPEAR, made from gold and blessed by the priests of the TEMPLE. Now it is in the hands of ESMERELDA."
+               }
+            }
+         ],
+         "GettableList":{  
+            "mana":"A MANA POTION sits atop the table.",
+            "health":"Next to the MANA POTION is a HEALTH POTION."
+         },
+         "ReadableList":{  
+            "note":"GRONK LIKE CHEESE"
+         }
+      },
+      {  
+         "ID":19,
+         "Intro":"You're in the northeast corner of the CITY SLUMS, a completely abandoned square.",
+         "West":18,
+         "South":8
+      },
+      {  
+         "ID":2,
+         "Intro":"You climb down to the EAST STEPS of the TEMPLE. Before you lies a short path to the EAST GATE of the CITY. Inlaid in gold on the steps are still the five magicks, but much of the gold has been chipped away and stripped out of its placements.",
+         "West":0,
+         "East":20,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.8,
+                  "Name":"Broken shopping cart basket helmet"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.8,
+                  "Name":"Broken shopping cart handle",
+                  "HitVerb":"smack"
+               },
+               "Health":20,
+               "MinDamage":5,
+               "Strength":10,
+               "Name":"hobo",
+               "ExpReward":50,
+               "Intro":"A DIRTY HOBO disgraces you with his presence, spitting in your direction.",
+               "Treasure":"health"
+            }
+         ]
+      },
+      {  
+         "ID":20,
+         "Intro":"You're on the EAST ROAD of the CITY, heading towards the EAST GATE. North of you lies the TRAINING ROOM, and to your south, a POTION SHOP. Delapidated torches line each side of the street, only 1 left lit properly. Others are charred, cracked in half, or just completely missing. Garbage is piled up on each side of the road, and it's clear that nobody has been maintaining this place for quite some time.",
+         "West":2,
+         "East":27,
+         "North":21,
+         "South":22,
+         "GettableList":{  
+            "health":"In the pile of trash you see a HEALTH POTION gleaming in the sun.",
+            "mana":"A MANA POTION is discarded in the road."
+         }
+      },
+      {  
+         "ID":21,
+         "Intro":"You're in the ruins of a TRAINING ROOM for the CITY MONKS. Blood spatters line the walls and floors of the entire facility, either from training or a horrible slaughter. A NOTICE was hastily stuck on the wall.",
+         "South":20,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Monk's Robes"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Fists of Fury",
+                  "HitVerb":"crippling punch"
+               },
+               "Health":55,
+               "MinDamage":5,
+               "Strength":20,
+               "Name":"monk",
+               "ExpReward":173,
+               "Intro":"In the corner of the mostly-empty room, a MAD MONK sits on a 3-legged stool, looking blankly out into the room.",
+               "Treasure":"health"
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Hardened Plate Armor of the Colossus"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Fists of Fury",
+                  "HitVerb":"crippling punch"
+               },
+               "Health":55,
+               "MinDamage":10,
+               "Strength":30,
+               "Name":"guard",
+               "ExpReward":250,
+               "Intro":"A GUARD of the FIFTH ORDER OF MONKS stares menacingly at you as you enter."
+            }
+         ],
+         "TalkableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Hardened Plate Armor of the Colossus"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Fists of Fury",
+                  "HitVerb":"crippling punch"
+               },
+               "Health":55,
+               "MinDamage":10,
+               "Strength":30,
+               "Name":"guard",
+               "ExpReward":250,
+               "Intro":"A GUARD of the FIFTH ORDER OF MONKS looks like he has something to say.",
+               "ChatReferences":{  
+                  "1: What happened here?":"I'm all that's left. We've been raided and raided and stolen from, and we have nothing but the blood of our enemies and our hands left to defend us.",
+                  "2: How did you get such amazing armor?":"Took it from a man I killed that came here and tried to steal our last SCRAP OF SCROLL.",
+                  "3: What's this garbage in the middle of the room?":"It is our last SCRAP. Four of them used to be in posession of the ORDER OF MONKS, and this is the last. It's essentially useless now, but people in this city still want to take it. I don't understand.",
+                  "4: What has gone down in this sad CITY?":"Heh, new to the area, I assume? For the last 10 years, the government fell and we've been in complete anarchy. This CITY has been raided again and again, and only the toughest and most insane live here anymore. It's still an area of interest thanks to the CHEST, but there's not much left to be had but death.",
+                  "5: What's with this monk in the corner?":"He's been driven insane from all that's happened. Every time I try to talk to him, he attacks me. I'm at a loss for what to do. He's the last MONK of the FIFTH ORDER left here in the city."
+               }
+            }
+         ],
+         "GettableList":{  
+            "trash":"A piece of trash is lying in the middle of the room."
+         },
+         "ReadableList":{  
+            "notice":"This is a training facility for the FIFTH ORDER OF MONKS. We bring no harm to the CITY or others and wish to remain independent to watch over the CHEST and prevent its evils from taking the world by storm. We bring you nothing but peace if you bring it to us, but we do not fear shedding blood."
+         }
+      },
+      {  
+         "ID":22,
+         "Intro":"You arrive in the old, abandoned POTION SHOP. There's no shopkeeper, and nothing on the shelves. In fact, it looks like almost all of the shelves are stolen, just nails dangling out of the walls. There's broken glass scattered across the room where the display cases have been raided.",
+         "North":20,
+         "GettableList":{  
+            "health":"Under one of the fallen shelves appears to be an unpilfered HEALTH POTION."
+         }
+      },
+      {  
+         "ID":27,
+         "Intro":"You stand at the destroyed EAST GATE. Once tall and glorious, the wall around it is crumbled and the rusted gate is full of huge holes, seemingly left by seige equipment. There's nothing here but rubble.",
+         "West":20,
+         "East":50,
+         "GettableList":{  
+            "junk":"Some random piece of burned, gnarled metal JUNK is sitting on the ground."
+         }
+      },
+      {  
+         "ID":50,
+         "Intro":"You stand at the EAST PYRE, a huge bronzed statue that houses burning trees. Even with all the fighting, it still burns bright, maintained by the remnantes of the FIFTH ORDER. A map in front of you reveals far down the SOUTH ROAD lies the settlement of DWARVGAARDEN, and to the north, the SCHOOL of the FIVE MAGICKS.",
+         "West":27,
+         "North":76,
+         "East":75,
+         "South":51
+      },
+      {  
+         "ID":75,
+         "Intro":"You head further East, coming to the edge of a steep cliff. At the bottom is a deep ocean that goes as far as the eye can see. You can go no further here.",
+         "West":50
+      },
+      {  
+         "ID":76,
+         "Intro":"You stand at the entrance to the SCHOOL OF MAGICKS. The entrance was once blocked by a magical wall, but it is transluscent now as its magic weakened. Anyone can pass right through. Scattered around the ground are broken wands and a few skeletons in robes.",
+         "North":77,
+         "South":50,
+         "GettableList":{  
+            "health":"It seems a full HEALTH POTION is poking out of one of the robes. A bit late for him to use it."
+         },
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":5,
+                  "Name":"Broken bones"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Shattered tooth wand",
+                  "HitVerb":"zap"
+               },
+               "Health":550,
+               "MinDamage":5,
+               "Strength":80,
+               "Name":"mage",
+               "ExpReward":238,
+               "Intro":"Among the bones is a SKELETON MAGE",
+               "Treasure":"health"
+            }
+         ]
+      },
+      {  
+         "ID":77,
+         "Intro":"You're in the entrance of the SCHOOL OF MAGICKS, a huge atrium with 100-foot ceilings. Hallways shoot out in all directions, leading to different wings of the school. The glass roof of the atrium has shattered, allowing weather to ruin the white marble floors. A tree has started growing in the atrium, reaching for the shattered ceiling. A magical SCROLL floats in the air in front of you.",
+         "South":76,
+         "West":78,
+         "North":79,
+         "East":80,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":5,
+                  "Name":"Broken bones"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Shattered tooth wand",
+                  "HitVerb":"zap"
+               },
+               "Health":550,
+               "MinDamage":5,
+               "Strength":80,
+               "Name":"mage",
+               "ExpReward":238,
+               "Intro":"A SKELETON MAGE cackles as you enter."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":5,
+                  "Name":"Broken bones"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Shattered tooth hammer",
+                  "HitVerb":"smash"
+               },
+               "Health":850,
+               "MinDamage":5,
+               "Strength":80,
+               "Name":"warrior",
+               "ExpReward":300,
+               "Intro":"A SKELETON WARRIOR stumbles through the atrium."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":5,
+                  "Name":"Broken bones"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Shattered tooth hammer",
+                  "HitVerb":"smash"
+               },
+               "Health":1000,
+               "MinDamage":5,{  
+   "rooms":[  
+      {  
+         "ID":0,
+         "Intro":"You are in a temple in the center of the city. In front of you lies an altar with a plaque that you're able to READ. Atop the altar lies The Righteous Chest, of which many adventurers such as yourself have attempted to open. Carved from the scales of the once-feared Black Dragon, its magic is impenetrable to all but the Shattered Key. An octagonal hole in the center of the chest glows a dim blue, waiting for the key's return. The floor below the altar is made of a beautiful white marble, freshly polished, which leads to tall, golden pillars on each corner. The pillars hold up a stained glass canopy, casting colors across the altar in front of you. In each direction, two marble steps inlaid with gold symbols lead down to the pavement. ",
+         "North":1,
+         "East":2,
+         "South":3,
+         "West":4,
+         "ReadableList":{  
+            "plaque":"The plaque shines in the colored light that passes through the roof. It reads,\n\n\"WITHIN THIS CHEST\nLIES THAT WHICH YOU NEED\nSEALED AWAY FOR THE CHOSEN ONE\nBLIND TO CORRUPTION AND GREED\"\n\n in deeply-carved, bold letters."
+         },
+         "TalkableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.1,
+                  "Name":"Red Banner Priesthood Cloak"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":100,
+                  "Name":"Justicar's Sword of 1000 Suns"
+               },
+               "Health":10000,
+               "Name":"priest",
+               "Intro":"A weary priest in stained robes stands guard next to the chest, clearly annoyed with passers-by.",
+               "ChatReferences":{  
+                  "1: What's in the chest?":"The priest scoffs at you and gestures at the plaque, saying nothing.",
+                  "2: Where am I?":"The priest clears his throat and utters a single word in a hushed voice: \"Ruins.\"",
+                  "3: What happened to this city?":"\"Thousands of years ago, a black dragon destroyed everything but this holy temple. He was slain atop the roof of this temple, his scales made into the chest before you. Since then, the secrets of the Old Order have been locked within to prevent The Summoning."
+               }
+            }
+         ]
+      },
+      {  
+         "ID":1,
+         "Intro":"You are on the northern steps of the temple. Below your feet, the symbols become clear up close -- the stairs bear the sigils of the five magicks of this realm: water, fire, wind, clay, and steel. A BANNER is strung up across the temple entrance. To the NORTH of the temple lies the city slums, and the temple is to the SOUTH.",
+         "North":5,
+         "South":0,
+         "ReadableList":{  
+            "banner":"The banner is hanging by just 3 of the 4 threads and is heavily tattered. It reads, \"COME ONE, COME ALL, PASS THE TRIALS OF THE SHATTERED KEY TO UNLOCK THE SACRED CHEST\".\n\nYou laugh to yourself at the irony of thousands of dead who've tried."
+         },
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":10,
+                  "Name":"Scraggly Fur"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.1,
+                  "Name":"Filthy, broken claws",
+                  "HitVerb":"scratch"
+               },
+               "Health":10,
+               "Name":"Rat",
+               "MinDamage":1,
+               "Strength":2,
+               "ExpReward":10,
+               "Intro":"At the base of the steps, a starving RAT limps towards you."
+            }
+         ]
+      },
+      {  
+         "ID":5,
+         "Intro":"You set foot into the entrance of the CITY SLUMS. Trash litters the street all around you. On the top of one of the piles, a TATTERED FLYER lies crumpled, and you can hear the sounds of men fighting in the distance. The pavement is cracked beneath your feet and a stench of death wafts towards you in the breeze.\n\nYou are at the intersection of MAIN STREET and 3RD AVENUE.",
+         "North":10,
+         "East":6,
+         "West":12,
+         "South":1,
+         "ReadableList":{  
+            "flyer":"Parts of the flyer are illegible from what seems to be years of abuse. It reads,\n\nWELCOME TO THE TEMPLE OF CINDERS, WARRIOR\nYOUR FATE WILL BE DECIDED BY YOUR BLADE\nJOIN THE CRUSADE FOR THE CHEST\nJULY 8, 2378\n\nCurious, as the current year is 2780. How could this flyer have survived so long?"
+         },
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Wretched, Rotting Flesh"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.1,
+                  "Name":"Sticky maw",
+                  "HitVerb":"bite"
+               },
+               "Health":15,
+               "Name":"Worm",
+               "MinDamage":1,
+               "Strength":2,
+               "ExpReward":10,
+               "Intro":"A demonic garbage WORM slithers your way!"
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Scraggly Fur"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.1,
+                  "Name":"Filthy, broken claws",
+                  "HitVerb":"scratch"
+               },
+               "Health":10,
+               "MinDamage":1,
+               "Strength":2,
+               "Name":"Rat",
+               "ExpReward":10,
+               "Intro":"In the pile of trash, a starving RAT limps towards you."
+            }
+         ]
+      },
+      {  
+         "ID":6,
+         "Intro":"You are in the CITY SLUMS, at the intersection of MAIN STREET and 4TH AVENUE. Blood stains the pavement beneath your feet, blood left long ago that has turned brown in the sun. Each step you take, the blood trail grows wider and darker, sticking to the bottom of your shoes.",
+         "North":9,
+         "East":7,
+         "West":5,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.9,
+                  "Name":"Leather Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1,
+                  "Name":"Brass Knuckles",
+                  "HitVerb":"hard punch"
+               },
+               "Health":30,
+               "MinDamage":2,
+               "Strength":15,
+               "Name":"thug",
+               "ExpReward":50,
+               "Intro":"A greasy THUG leans against a nearby rundown building."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Scraggly Fur"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Diseased claws",
+                  "HitVerb":"scratch"
+               },
+               "Health":20,
+               "Strength":3,
+               "Name":"Rat",
+               "ExpReward":10,
+               "Intro":"A BLOOD RAT crawls from the pools of blood below."
+            }
+         ]
+      },
+      {  
+         "ID":7,
+         "Intro":"You've reached the DESTROYED MONUMENT in the southeast corner of the CITY SLUMS, at the intersection of MAIN STREET and 5TH AVENUE. The once-proud monument is now an indistinguishable pile of metal scrap. At the base, a MESSAGE is carved into the stone placement. The trail of blood continues to widen until the monument, where it curiously ends without explanation.",
+         "North":8,
+         "West":6,
+         "ReadableList":{  
+            "message":"The carving is crude and unfinished, only saying \"FLORG WUZ HE\". You assume it means \"FLORG WUZ HERE\", but who knows who that is."
+         },
+         "GettableList":{  
+            "stick":"An old, broken STICK, perhaps once part of a real weapon, lays at the end of the pool of blood."
+         },
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.9,
+                  "Name":"Leather Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1,
+                  "Name":"Rusty Knife",
+                  "HitVerb":"slash"
+               },
+               "Health":20,
+               "MinDamage":5,
+               "Strength":30,
+               "Name":"thug",
+               "ExpReward":150,
+               "Intro":"A SCARRED, BLOODIED THUG kneels next to the monument, hovering over a corpse. He has a demonic look about him, but appears to have barely won the fight."
+            }
+         ]
+      },
+      {  
+         "ID":8,
+         "Intro":"You walk along the Eastern Wall of the CITY SLUMS, pausing at the intersection of CINDER STREET and 5TH AVENUE. More blood trails here lead SOUTH towards the DESTROYED MONUMENT, leaving an acrid steam rising from the pavement. A BLOODIED NOTE is stuck to the side of the cracked wall, among hundreds of unrecognizable tattered posters.",
+         "North":19,
+         "South":7,
+         "West":9,
+         "ReadableList":{  
+            "note":"Hundreds of years pass, and not one key fragment has been discovered. I'm starting to think the whole thing was a hoax to kill the best Bounty Hunters. Either way, ESMERELDA is going to hear a few words from me. Starting to think the key fragments don't even exi...\n\nBlood blotches out the rest of the note, making it illegible."
+         }
+      },
+      {  
+         "ID":9,
+         "Intro":"The cracked pavement beneath your feet is filled with dried blood. You are stopped at the intersection of CINDER STREET and FOURTH AVENUE. As the sun shines through the yellow haze above, you realize you've gone quite far into the slums now. You can only see a few feet in front of you through the smoke.\n",
+         "North":18,
+         "South":6,
+         "West":10,
+         "East":8,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.8,
+                  "Name":"Studded Leather Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Bloody Knife",
+                  "HitVerb":"slash"
+               },
+               "Health":50,
+               "MinDamage":4,
+               "Strength":20,
+               "Name":"bodyguard",
+               "ExpReward":100,
+               "Intro":"A RUGGED BODYGUARD stands alone in the smoke, staring down at his bloodied blade. Steam rises from the blade, indicating a fresh kill."
+            }
+         ],
+         "TalkableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.8,
+                  "Name":"Studded Leather Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Bloody Knife",
+                  "HitVerb":"slash"
+               },
+               "Health":50,
+               "MinDamage":4,
+               "Strength":20,
+               "Name":"bodyguard",
+               "ExpReward":100,
+               "Intro":"The RUGGED BODYGUARD looks up at you stoically.",
+               "ChatReferences":{  
+                  "1: Who are you?":"My name isn't important. I have failed.",
+                  "2: What are you doing?":"I was tasked with bringing my client to ESMERELDA, the THUG QUEEN. I just got done fighting one on the EAST WALL, but my client didn't make it. Now I don't know what to do.",
+                  "3: What happened to this city?":"This hasn't been a city for hundreds of years. The only safe place is the temple, and that's only because of the Priests Guard. The CITY SLUMS are no place for you; get out."
+               }
+            }
+         ]
+      },
+      {  
+         "ID":10,
+         "Intro":"You are at the intersection of CINDER STREET and THIRD AVENUE. There's more garbage piled here than you've seen anywhere in the CITY SLUMS, most likely from the central location.\n",
+         "North":17,
+         "South":5,
+         "East":9,
+         "West":11,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.8,
+                  "Name":"Sticky Rat Pelt"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.5,
+                  "Name":"Thousands of Infected Claws",
+                  "HitVerb":"slash"
+               },
+               "Health":100,
+               "MinDamage":5,
+               "Strength":15,
+               "Name":"king",
+               "ExpReward":333,
+               "Intro":"In the filth and stench, a horrible RAT KING starts pulling your way. Hundreds of rats, all tangled by the tail, screech in agony with every step."
+            }
+         ]
+      },
+      {  
+         "ID":11,
+         "Intro":"You step into the crossing of CINDER STREET and SECOND AVENUE. Plumes of smoke rise up from the NORTHWEST, which seems to be the cause of the yellow haze darkening the slums. ",
+         "North":16,
+         "South":12,
+         "East":10,
+         "West":14,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Scraggly fur"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Broken Claws",
+                  "HitVerb":"claw"
+               },
+               "Health":10,
+               "MinDamage":0,
+               "Strength":2,
+               "Name":"rat",
+               "ExpReward":10,
+               "Intro":"An INJURED RAT limps away from you, trying to flee."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Thick Plates"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Poisonous Maw",
+                  "HitVerb":"vile bite"
+               },
+               "Health":30,
+               "MinDamage":2,
+               "Strength":10,
+               "Name":"worm",
+               "ExpReward":40,
+               "Intro":"An MAW WORM is hanging from an awning above."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.7,
+                  "Name":"Thick Skin"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.2,
+                  "Name":"Cloven Hooves",
+                  "HitVerb":"stomp"
+               },
+               "Health":55,
+               "MinDamage":3,
+               "Strength":15,
+               "Name":"antelope",
+               "ExpReward":250,
+               "Intro":"A RABID ANTELOPE is stumbling around in the street, kicking at the smaller creatures.",
+               "Treasure":"health,health"
+            }
+         ],
+         "TalkableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":1,
+                  "Name":"Blood-soaked robes"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Cracked staff",
+                  "HitVerb":"slash"
+               },
+               "Health":50,
+               "MinDamage":4,
+               "Strength":20,
+               "Name":"monk",
+               "ExpReward":100,
+               "Intro":"A MONK wearing blood-soaked robes is leaning against a pile of skulls, looking your way inquisitively.",
+               "ChatReferences":{  
+                  "1: Are you injured?":"No. I have slain many enemies in the slums today, but I'll never be able to beat ESMERELDA. She holds one of the key fragments, but is surrounded by BURLY GUARDS, and is quite tough herself. I'm heading back to the TEMPLE to heal.",
+                  "2: What say you about ESMERELDA?":"She is a fierce fighter with a fiercer guard. She is the only BOUNTY HUNTER to return to the city with a KEY FRAGMENT, and has been under constant attack since. I managed to kill her weakest guard, but not without paying a dire price. I need to return to the TEMPLE.",
+                  "3: Can you heal at the TEMPLE?":"No. I will be heading there to prey, then die. If I make it even one more step.",
+                  "4: What's with the ANTELOPE?":"Just one of the many weapons ESMERELDA employs. It followed me here before I hit him with a poison dart, so he should be weakened. She's in the NORTHWEST of the slums, so be careful if you keep heading that way."
+               }
+            }
+         ]
+      },
+      {  
+         "ID":12,
+         "Intro":"You step into the crossing of MAIN STREET and SECOND AVENUE. The stench grows worse as you walk deeper into the slums.",
+         "North":11,
+         "East":5,
+         "West":13,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Scraggly fur"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Broken Claws",
+                  "HitVerb":"claw"
+               },
+               "Health":0,
+               "MinDamage":0,
+               "Strength":2,
+               "Name":"rat",
+               "ExpReward":10,
+               "Intro":"A DYING RAT lies on the pavement, struggling to breathe."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Cracked MedVisor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Jagged, metal first aid kit",
+                  "HitVerb":"toxic bash"
+               },
+               "Health":40,
+               "MinDamage":2,
+               "Strength":15,
+               "Name":"medic",
+               "ExpReward":47,
+               "Intro":"A DERANGED MEDIC is yammering to himself about how he could have done more, several dirty needles sticking out of his broken FIRST AID KIT."
+            }
+         ]
+      },
+      {  
+         "ID":13,
+         "Intro":"You step into the crossing of MAIN STREET and FIRST AVENUE. Just north of here, you can see plumes of yellow smoke spitting out into the slums.",
+         "North":14,
+         "East":12,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Scraggly fur"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Broken Claws",
+                  "HitVerb":"claw"
+               },
+               "Health":17,
+               "MinDamage":0,
+               "Strength":2,
+               "Name":"rat",
+               "ExpReward":10,
+               "Intro":"A PLAGUE RAT is foaming at the mouth in the sewer grate."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Tattered Eyepatch"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.7,
+                  "Name":"Smoked salmon",
+                  "HitVerb":"fish slap"
+               },
+               "Health":50,
+               "MinDamage":5,
+               "Strength":20,
+               "Name":"madman",
+               "ExpReward":66,
+               "Intro":"The TOWN MADMAN is running around in circles here, screaming loudly."
+            }
+         ]
+      },
+      {  
+         "ID":14,
+         "Intro":"The stench grows stronger, and the yellow smoke is all around you now. It smells of acrid, stale chemicals. You're at the cross street of CINDER STREET and FIRST AVENUE. ",
+         "North":15,
+         "South":13,
+         "East":11,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Duct tape armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Broken club",
+                  "HitVerb":"wallop"
+               },
+               "Health":17,
+               "MinDamage":0,
+               "Strength":2,
+               "Name":"thug",
+               "ExpReward":10,
+               "Intro":"A SCRAWNY THUG laughs as you approach the intersection."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":1.5,
+                  "Name":"Headband"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.7,
+                  "Name":"Bent spatula",
+                  "HitVerb":"slap"
+               },
+               "Health":50,
+               "MinDamage":5,
+               "Strength":20,
+               "Name":"madman",
+               "ExpReward":70,
+               "Intro":"A DERANGED MADMAN screams random violent phrases about your mother."
+            }
+         ]
+      },
+      {  
+         "ID":15,
+         "Intro":"You've reached ESMERELDA's HEADQUARTERS, in the northwest of the CITY SLUMS. Heads on spikes surround the entrance to her shanty town. A HASTILY-DRAWN POSTER is shoved in the mouth of one of the skulls. ",
+         "South":14,
+         "East":11,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":2,
+                  "Name":"Duct tape armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.5,
+                  "Name":"Broken club",
+                  "HitVerb":"wallop"
+               },
+               "Health":17,
+               "MinDamage":0,
+               "Strength":2,
+               "Name":"thug",
+               "ExpReward":10,
+               "Intro":"A SCRAWNY THUG laughs as you approach the intersection."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":1.5,
+                  "Name":"Headband"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.7,
+                  "Name":"Bent spatula",
+                  "HitVerb":"slap"
+               },
+               "Health":50,
+               "MinDamage":5,
+               "Strength":20,
+               "Name":"madman",
+               "ExpReward":175,
+               "Intro":"A DERANGED MADMAN screams random violent phrases about your mother."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.4,
+                  "Name":"Double Thick Studded Leather Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"rusty pipe",
+                  "HitVerb":"hit that breaks off part of his pipe, deflecting the blow"
+               },
+               "Health":50,
+               "MinDamage":5,
+               "Strength":40,
+               "Name":"tony",
+               "ExpReward":270,
+               "Intro":"TONY, Esmerelda's top henchman, stands tall beside her wielding a rusty galvanized pipe.",
+               "DeathMessage":"ESMERELDA laughs as TONY falls to the ground dead. \"I always knew he was useless,\" she utters."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.4,
+                  "Name":"Double Thick Studded Leather Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.5,
+                  "Name":"Brick",
+                  "HitVerb":"bash"
+               },
+               "Health":50,
+               "MinDamage":2,
+               "Strength":20,
+               "Name":"esmerelda",
+               "ExpReward":500,
+               "Intro":"ESMERELDA sits atop a throne of starving slaves.",
+               "DeathMessage":"ESMERELDA falls to her knees and coughs up blood, battered and gashed. As she bleeds out, she furiously stares at you and whispers,\"Gah...how...my fragment...the chest..\" Her eyes slowly close and she topples backwards like a rag doll. The slaves immediately flee into the slums.",
+               "Treasure":"health potion,health potion,brick,mana potion,wooden,triangular key fragment"
+            }
+         ],
+         "GettableList":{  
+            "health":"Discarded next to the entrance lies a man's corpse with a full HEALTH POTION strapped to his belt.",
+            "grass":"The man also is wearing unscathed GRASS ARMOR that you could use. A dagger is stuck between his eyes so deep his head is stuck to the ground."
+         }
+      },
+      {  
+         "ID":16,
+         "Intro":"You're at the intersection of CINDER STREET and THIRD AVENUE. To the west, plumes of yellow smoke rise up into the skies. You can hear suffering coming from that direction.",
+         "West":15,
+         "East":17,
+         "South":11,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":3,
+                  "Name":"Birthday suit"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":10,
+                  "Name":"Infected Mace",
+                  "HitVerb":"smash"
+               },
+               "Health":25,
+               "MinDamage":2,
+               "Strength":5,
+               "Name":"knight",
+               "ExpReward":58,
+               "Intro":"A RABID KNIGHT is rolling around on his back, foaming at the mouth and screaming."
+            }
+         ]
+      },
+      {  
+         "ID":17,
+         "Intro":"You are at the NORTH CENTER of the slums. In the middle of the square is a pile of skulls, covering what appears to be a large STONE PLATE with an inscription.",
+         "West":16,
+         "East":18,
+         "South":10,
+         "ReadableList":{  
+            "plate":"You knock skulls to the side to read the STONE PLATE. Inscribed on the bottom is a short phrase:\"NEVER FIGHT ESMERELDA\"."
+         }
+      },
+      {  
+         "ID":18,
+         "Intro":"You enter the cleanest intersection of the slums you've seen. It's pristine top to bottom, even the dust from the knick knacks in the building windows removed down to the speck. In the middle of the square is a square, wooden table with carved legs in the shape of a Chinese dragon. In the center of the table, a POST-IT NOTE is stuck to a lone cup.",
+         "West":17,
+         "East":19,
+         "South":9,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":3,
+                  "Name":"Obliterated plate armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":2,
+                  "Name":"shattered sword",
+                  "HitVerb":"lacerating stab"
+               },
+               "Health":80,
+               "MinDamage":1,
+               "Strength":40,
+               "Name":"gronk",
+               "ExpReward":777,
+               "Intro":"GRONK THE BARBARIAN sits at one of the four chairs of the table, muttering about blood and suffering.",
+               "Treasure":"health,health"
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.1,
+                  "Name":"Diamond Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.4,
+                  "Name":"Rusty chain",
+                  "HitVerb":"smash"
+               },
+               "Health":40,
+               "MinDamage":15,
+               "Strength":20,
+               "Name":"guard",
+               "ExpReward":99,
+               "Intro":"A former ROYAL GUARD is sobbing softly to himself, holding a broken, rusted chain in his hands."
+            }
+         ],
+         "TalkableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.1,
+                  "Name":"Diamond Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.4,
+                  "Name":"Rusty chain",
+                  "HitVerb":"smash"
+               },
+               "Health":40,
+               "MinDamage":15,
+               "Strength":20,
+               "Name":"guard",
+               "ExpReward":99,
+               "Intro":"The ROYAL GUARD nods at you as you approach.",
+               "ChatReferences":{  
+                  "1: Who are you?":"I once guarded the noble family of this city. But they were all slaughtered seven months ago in THE CULLING. Since then, this part of the city has gone to total shit.",
+                  "2: What happened to your weapon?":"Stolen from me as I lay sleeping. It was a fine SPEAR, made from gold and blessed by the priests of the TEMPLE. Now it is in the hands of ESMERELDA."
+               }
+            }
+         ],
+         "GettableList":{  
+            "mana":"A MANA POTION sits atop the table.",
+            "health":"Next to the MANA POTION is a HEALTH POTION."
+         },
+         "ReadableList":{  
+            "note":"GRONK LIKE CHEESE"
+         }
+      },
+      {  
+         "ID":19,
+         "Intro":"You're in the northeast corner of the CITY SLUMS, a completely abandoned square.",
+         "West":18,
+         "South":8
+      },
+      {  
+         "ID":2,
+         "Intro":"You climb down to the EAST STEPS of the TEMPLE. Before you lies a short path to the EAST GATE of the CITY. Inlaid in gold on the steps are still the five magicks, but much of the gold has been chipped away and stripped out of its placements.",
+         "West":0,
+         "East":20,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.8,
+                  "Name":"Broken shopping cart basket helmet"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.8,
+                  "Name":"Broken shopping cart handle",
+                  "HitVerb":"smack"
+               },
+               "Health":20,
+               "MinDamage":5,
+               "Strength":10,
+               "Name":"hobo",
+               "ExpReward":50,
+               "Intro":"A DIRTY HOBO disgraces you with his presence, spitting in your direction.",
+               "Treasure":"health"
+            }
+         ]
+      },
+      {  
+         "ID":20,
+         "Intro":"You're on the EAST ROAD of the CITY, heading towards the EAST GATE. North of you lies the TRAINING ROOM, and to your south, a POTION SHOP. Delapidated torches line each side of the street, only 1 left lit properly. Others are charred, cracked in half, or just completely missing. Garbage is piled up on each side of the road, and it's clear that nobody has been maintaining this place for quite some time.",
+         "West":2,
+         "East":27,
+         "North":21,
+         "South":22,
+         "GettableList":{  
+            "health":"In the pile of trash you see a HEALTH POTION gleaming in the sun.",
+            "mana":"A MANA POTION is discarded in the road."
+         }
+      },
+      {  
+         "ID":21,
+         "Intro":"You're in the ruins of a TRAINING ROOM for the CITY MONKS. Blood spatters line the walls and floors of the entire facility, either from training or a horrible slaughter. A NOTICE was hastily stuck on the wall.",
+         "South":20,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Monk's Robes"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Fists of Fury",
+                  "HitVerb":"crippling punch"
+               },
+               "Health":55,
+               "MinDamage":5,
+               "Strength":20,
+               "Name":"monk",
+               "ExpReward":173,
+               "Intro":"In the corner of the mostly-empty room, a MAD MONK sits on a 3-legged stool, looking blankly out into the room.",
+               "Treasure":"health"
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Hardened Plate Armor of the Colossus"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Fists of Fury",
+                  "HitVerb":"crippling punch"
+               },
+               "Health":55,
+               "MinDamage":10,
+               "Strength":30,
+               "Name":"guard",
+               "ExpReward":250,
+               "Intro":"A GUARD of the FIFTH ORDER OF MONKS stares menacingly at you as you enter."
+            }
+         ],
+         "TalkableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Hardened Plate Armor of the Colossus"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Fists of Fury",
+                  "HitVerb":"crippling punch"
+               },
+               "Health":55,
+               "MinDamage":10,
+               "Strength":30,
+               "Name":"guard",
+               "ExpReward":250,
+               "Intro":"A GUARD of the FIFTH ORDER OF MONKS looks like he has something to say.",
+               "ChatReferences":{  
+                  "1: What happened here?":"I'm all that's left. We've been raided and raided and stolen from, and we have nothing but the blood of our enemies and our hands left to defend us.",
+                  "2: How did you get such amazing armor?":"Took it from a man I killed that came here and tried to steal our last SCRAP OF SCROLL.",
+                  "3: What's this garbage in the middle of the room?":"It is our last SCRAP. Four of them used to be in posession of the ORDER OF MONKS, and this is the last. It's essentially useless now, but people in this city still want to take it. I don't understand.",
+                  "4: What has gone down in this sad CITY?":"Heh, new to the area, I assume? For the last 10 years, the government fell and we've been in complete anarchy. This CITY has been raided again and again, and only the toughest and most insane live here anymore. It's still an area of interest thanks to the CHEST, but there's not much left to be had but death.",
+                  "5: What's with this monk in the corner?":"He's been driven insane from all that's happened. Every time I try to talk to him, he attacks me. I'm at a loss for what to do. He's the last MONK of the FIFTH ORDER left here in the city."
+               }
+            }
+         ],
+         "GettableList":{  
+            "trash":"A piece of trash is lying in the middle of the room."
+         },
+         "ReadableList":{  
+            "notice":"This is a training facility for the FIFTH ORDER OF MONKS. We bring no harm to the CITY or others and wish to remain independent to watch over the CHEST and prevent its evils from taking the world by storm. We bring you nothing but peace if you bring it to us, but we do not fear shedding blood."
+         }
+      },
+      {  
+         "ID":22,
+         "Intro":"You arrive in the old, abandoned POTION SHOP. There's no shopkeeper, and nothing on the shelves. In fact, it looks like almost all of the shelves are stolen, just nails dangling out of the walls. There's broken glass scattered across the room where the display cases have been raided.",
+         "North":20,
+         "GettableList":{  
+            "health":"Under one of the fallen shelves appears to be an unpilfered HEALTH POTION."
+         }
+      },
+      {  
+         "ID":27,
+         "Intro":"You stand at the destroyed EAST GATE. Once tall and glorious, the wall around it is crumbled and the rusted gate is full of huge holes, seemingly left by seige equipment. There's nothing here but rubble.",
+         "West":20,
+         "East":50,
+         "GettableList":{  
+            "junk":"Some random piece of burned, gnarled metal JUNK is sitting on the ground."
+         }
+      },
+      {  
+         "ID":50,
+         "Intro":"You stand at the EAST PYRE, a huge bronzed statue that houses burning trees. Even with all the fighting, it still burns bright, maintained by the remnantes of the FIFTH ORDER. A map in front of you reveals far down the SOUTH ROAD lies the settlement of DWARVGAARDEN, and to the north, the SCHOOL of the FIVE MAGICKS.",
+         "West":27,
+         "North":76,
+         "East":75,
+         "South":51
+      },
+      {  
+         "ID":75,
+         "Intro":"You head further East, coming to the edge of a steep cliff. At the bottom is a deep ocean that goes as far as the eye can see. You can go no further here.",
+         "West":50
+      },
+      {  
+         "ID":76,
+         "Intro":"You stand at the entrance to the SCHOOL OF MAGICKS. The entrance was once blocked by a magical wall, but it is transluscent now as its magic weakened. Anyone can pass right through. Scattered around the ground are broken wands and a few skeletons in robes.",
+         "North":77,
+         "South":50,
+         "GettableList":{  
+            "health":"It seems a full HEALTH POTION is poking out of one of the robes. A bit late for him to use it."
+         },
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":5,
+                  "Name":"Broken bones"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Shattered tooth wand",
+                  "HitVerb":"zap"
+               },
+               "Health":550,
+               "MinDamage":5,
+               "Strength":80,
+               "Name":"mage",
+               "ExpReward":238,
+               "Intro":"Among the bones is a SKELETON MAGE",
+               "Treasure":"health"
+            }
+         ]
+      },
+      {  
+         "ID":77,
+         "Intro":"You're in the entrance of the SCHOOL OF MAGICKS, a huge atrium with 100-foot ceilings. Hallways shoot out in all directions, leading to different wings of the school. The glass roof of the atrium has shattered, allowing weather to ruin the white marble floors. A tree has started growing in the atrium, reaching for the shattered ceiling. A magical SCROLL floats in the air in front of you.",
+         "South":76,
+         "West":78,
+         "North":79,
+         "East":80,
+         "KillableList":[  
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":5,
+                  "Name":"Broken bones"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Shattered tooth wand",
+                  "HitVerb":"zap"
+               },
+               "Health":550,
+               "MinDamage":5,
+               "Strength":80,
+               "Name":"mage",
+               "ExpReward":238,
+               "Intro":"A SKELETON MAGE cackles as you enter."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":5,
+                  "Name":"Broken bones"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Shattered tooth hammer",
+                  "HitVerb":"smash"
+               },
+               "Health":850,
+               "MinDamage":5,
+               "Strength":80,
+               "Name":"warrior",
+               "ExpReward":300,
+               "Intro":"A SKELETON WARRIOR stumbles through the atrium."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":5,
+                  "Name":"Broken bones"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Shattered tooth hammer",
+                  "HitVerb":"smash"
+               },
+               "Health":1000,
+               "MinDamage":5,
+               "Strength":80,
+               "Name":"monk",
+               "ExpReward":238,
+               "Intro":"In the darkness under the tree, a SKELETON MONK prays."
+            }
+         ],
+         "ReadableList":{  
+            "scroll":"This is the SCHOOL OF MAGICKS. I am the MAGICAL HISTORIAN, tasked with keeping the history of this place. About 20 years ago, a spell erased most of what I know; however, I saw the destruction after. The only mages left are bones possessed by evil. They attempted to save their own lives to protect the secrets of the school, but now they are mindless, soulless bodyguards."
+         }
+      },
+      {  
+         "ID":78,
+         "Intro":"Broken vials, beakers, and flasks are scattered about the 10 metal tables in the room. Several burners are destroyed, looking like they'd exploded. Various broken potions have leaked all over the floor, leaving a myriad of colors. Windows let in the light from the outside, but the electricity looks to have been disabled for quite some time. Various lights hang from their wires from the ceiling, surrounded by char marks. A magical battle definitely happened in the remains of this POTION LAB.",
+         "East":77,
+         "GettableList":{  
+            "health":"A good-looking HEALTH POTION is sitting among the rubble."
+         }
+      },
+      {  
+         "ID":79,
+         "Intro":"You are in the MASSIVE LIBRARY of the school. A SPELLBOOK is sitting on the floor, knocked from a huge pedestal. Each page is the size of a horse, with thousands of years of knowledge in the text. The rest of the library's shelves are stripped clean. You assume the weight of the spellbook saved it from pilfering.",
+         "South":77,
+         "ReadableList":{  
+            "spellbook":"You read the spellbook, but you can barely make out any words. Some pages are sealed fully shut with magic and impossible to read."
+         },
+         "GettableList":{  
+            "health":"Under the podium lies an untouched HEALTH POTION."
+         }
+      },
+	  {
+		 "ID":80,
+		 "Intro":"You set foot into the EAST WING of the SCHOOL OF MAGICKS. A long hallway lies before you with classrooms lining the right wall. On the wall in front of you is an informative PLAQUE that details information about the school.",
+		 "West":77,
+		 "East":81,
+		 "North":82,
+		 "ReadableList":{
+			"plaque":"The plaque simply states, \"EAST HALL: DARK MAGIC\" in big, bold letters."
+		 },
+		 "KillableList":[
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":5,
+                  "Name":"Broken bones"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Shattered tooth wand",
+                  "HitVerb":"zap"
+               },
+               "Health":550,
+               "MinDamage":5,
+               "Strength":80,
+               "Name":"mage",
+               "ExpReward":238,
+               "Intro":"A SKELETON MAGE cackles as you enter."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Reinforced Bone Plate Armor"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.1,
+                  "Name":"Reinforced Bone Hammer",
+                  "HitVerb":"smash"
+               },
+               "Health":600,
+               "MinDamage":9,
+               "Strength":40,
+               "Name":"paladin",
+               "ExpReward":666,
+               "Intro":"The SKELETON PALADIN stands guard at the entrance to the east hall, possessed by ancient magic."
+            }
+		 ]
+	  },
+	  {
+		 "ID":81,
+		 "Intro":"You're in CLASSROOM 8342 in the school. On the wall to the right of the entrance of the room, \"DARK ARTS: FIRE\" is written in block print.",
+		 "West":80,
+		 "KillableList":[
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":5,
+                  "Name":"Broken bones"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Firetooth wand",
+                  "HitVerb":"burning blast"
+               },
+               "Health":550,
+               "MinDamage":5,
+               "Strength":80,
+               "Name":"mage",
+               "ExpReward":238,
+               "Intro":"A SKELETON FIRE MAGE cackles as you enter."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":5,
+                  "Name":"Broken bones"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.5,
+                  "Name":"Orbs of Flame",
+                  "HitVerb":"incinerationt"
+               },
+               "Health":550,
+               "MinDamage":5,
+               "Strength":30,
+               "Name":"wizard",
+               "ExpReward":238,
+               "Intro":"A FIRE WIZARD is surrounded by a wall of flame, hiding from the chaos."
+            }
+		 ]
+	  },
+	  {
+		 "ID":82,
+		 "Intro":"You're in the hallway of the SCHOOL OF MAGICKS. Various bones lie abandoned in the floors, and high pillars hold up the 30 foot ceiling of the hallway. Fragments of bone crunch as you walk on the old stone floors.",
+		 "East":83,
+		 "South":80,
+		 "North":84
+	  },
+	  {
+		 "ID":83,
+		 "Intro":"You enter another classroom in the school, and \"NECROMANCY\" is inscribed on the wall. The desks in the room are askew and upturned, and one of the windows is shattered.",
+		 "West":82,
+		 "KillableList":[
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":5,
+                  "Name":"Broken bones"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":0.2,
+                  "Name":"Firetooth wand",
+                  "HitVerb":"burning blast"
+               },
+               "Health":550,
+               "MinDamage":5,
+               "Strength":80,
+               "Name":"mage",
+               "ExpReward":238,
+               "Intro":"A SKELETON MAGE cackles as you enter."
+            },
+            {  
+               "EquippedArmor":{  
+                  "DamageMultiplier":1,
+                  "Name":"Robes of Bone"
+               },
+               "EquippedWeapon":{  
+                  "DamageMultiplier":1.2,
+                  "Name":"Bone Staff",
+                  "HitVerb":"life-draining siphon"
+               },
+               "Health":1000,
+               "MinDamage":1,
+               "Strength":17,
+               "Name":"necromancer",
+               "ExpReward":1000,
+               "Intro":"The UNDEAD NECROMANCER stared icily into your soul."
+            }
+		 ]
+	  },
+	  {
+		 "ID":84,
+		 "Intro":"The high-ceilinged hallway continues in the EAST WING of the SCHOOL OF MAGICKS. The piles of bones grow larger deeper into the wing. A TATTERED NOTE is stabbed into the wall with a rusty dagger.",
+		 "East":85,
+		 "North":86,
+		 "South":82,
+		 "ReadableList":{
+			 "note":"\"Who knows how many days it's been. I've watched all my friends die, and then come back. But they never come back all the way. The MAD MAGICIAN is controlling everyone's skeletons in death as they wouldn't listen to him in life. I am KRAYN, an apprentice of the school, and I fear soon my own death. If anyone finds this note, you have to kill the MAD MAGICIAN. He's found a KEY FRAGMENT and is driven insane by the need to find the other five! STOP HIM!"
+		 }
+   ]
+}
